@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Prompt', sans-serif;;
+}
+h1{
+    
+    font-weight: bold;
+    color: rgb(155, 155, 243);
+    
+}
+
+section img{
+    float: right;
+    height: 300px;
+    width: 500px;
+}
+section{
+    text-align: left;
+    padding: 50px 250px;
+}
+/*  Questions to ask */
+/* what to do if we want to add pading between the text and the image */
+/* assignment ya to flexbox ya grid system se horaha na kay float se */

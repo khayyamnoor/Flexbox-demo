@@ -1,0 +1,110 @@
+/* THE WHOLE CSS PERFORMED IS DONE WITH THE HELP OF THE GRID SYSTEM
+    WE CAN EITHER USE FLEX BOX OR EITHER THE GRID 
+     
+    SOME BASICS:
+    display:grid----helps us enable grid
+    grid-template-column---
+    grid-gap---
+    grid-template-column:repeat()---
+    grid-auto-rows---
+    grid-colum---
+    grid-row---    
+    
+    
+    */
+/* This is for navbar */
+nav{
+    width: 100%;
+    float: left;
+}
+.menu{
+    margin: 0 auto;
+    padding: 8px;
+    height: 25px;
+    background-color: #17202A;
+}
+li{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.user{
+    float: right;
+}
+/* wrapper indicates the external grid which is further divided into 2 divs which 
+    occupy a proportion of 20 and 70 percent and a gap on 2 em which is achieved by turning on the grid */
+    .wrapper{
+    background-color: white;
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 2em;
+}
+/*  this is the code for the sidebar*/
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 1px solid black;
+    height: 420px;
+}
+div{    
+    background-color: #F4F6F6;
+    border-radius: 5px;
+    margin: 8px;
+}
+.sidebar div{
+    display: block;
+    padding: 4px;
+    font-size: medium;
+    text-align: left;
+    color: rgb(152, 152, 243)    ;
+}
+.sidebar div:hover{
+    background-color: #2E86C1;
+    color: white;
+}
+
+/* this is the code for the right top div */
+.top{
+    grid-column: 2/4;
+    border: 1px solid black;
+    margin-right: 90px;
+    height: 390px;
+}
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+button{
+    padding: 6px;
+}
+section{
+    margin: 80px;
+    align-items: left;
+    padding-left: 25px;
+}
+.innerbutton{
+    color: white;
+    background-color: #2E86C1;
+    border-radius: 5px;
+    padding: 13px;
+    border:none;
+}
+/* this is the code for the lower part of the landing page */
+.main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1em;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: 300px;
+}
+.main div{
+    background-color: white;
+    color: rgb(61, 55, 55);
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
